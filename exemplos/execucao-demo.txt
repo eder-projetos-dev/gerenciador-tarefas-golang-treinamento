@@ -1,0 +1,222 @@
+# Exemplo de Execução - Sistema de Gerenciamento de Tarefas
+
+## Iniciando o programa
+$ go run tarefas.go
+
+=== SISTEMA DE GERENCIAMENTO DE TAREFAS ===
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 4
+
+Nenhuma tarefa encontrada.
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 1
+
+Digite o título da tarefa: Comprar leite
+Digite a descrição da tarefa: Comprar 2 litros de leite no supermercado
+Tarefa adicionada com sucesso!
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 1
+
+Digite o título da tarefa: Estudar Go
+Digite a descrição da tarefa: Completar exercícios de slices e maps
+Tarefa adicionada com sucesso!
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 1
+
+Digite o título da tarefa: Fazer exercícios
+Digite a descrição da tarefa: Academia às 18h
+Tarefa adicionada com sucesso!
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 4
+
+=== LISTA DE TAREFAS ===
+1. Título: Comprar leite
+   Descrição: Comprar 2 litros de leite no supermercado
+   Status: pendente
+   ------------------------------
+2. Título: Estudar Go
+   Descrição: Completar exercícios de slices e maps
+   Status: pendente
+   ------------------------------
+3. Título: Fazer exercícios
+   Descrição: Academia às 18h
+   Status: pendente
+   ------------------------------
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 3
+
+Digite o título da tarefa a ser marcada como concluída: Comprar leite
+Tarefa marcada como concluída!
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 4
+
+=== LISTA DE TAREFAS ===
+1. Título: Comprar leite
+   Descrição: Comprar 2 litros de leite no supermercado
+   Status: concluída
+   ------------------------------
+2. Título: Estudar Go
+   Descrição: Completar exercícios de slices e maps
+   Status: pendente
+   ------------------------------
+3. Título: Fazer exercícios
+   Descrição: Academia às 18h
+   Status: pendente
+   ------------------------------
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 3
+
+Digite o título da tarefa a ser marcada como concluída: Estudar Go
+Tarefa marcada como concluída!
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 2
+
+Digite o título da tarefa a ser removida: Fazer exercícios
+Tarefa removida com sucesso!
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 4
+
+=== LISTA DE TAREFAS ===
+1. Título: Comprar leite
+   Descrição: Comprar 2 litros de leite no supermercado
+   Status: concluída
+   ------------------------------
+2. Título: Estudar Go
+   Descrição: Completar exercícios de slices e maps
+   Status: concluída
+   ------------------------------
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 2
+
+Digite o título da tarefa a ser removida: Tarefa inexistente
+Tarefa não encontrada.
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 3
+
+Digite o título da tarefa a ser marcada como concluída: Tarefa que não existe
+Tarefa não encontrada.
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 1
+
+Digite o título da tarefa: Comprar leite
+Já existe uma tarefa com este título!
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 0
+
+Opção inválida! Tente novamente.
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: abc
+
+Opção inválida! Tente novamente.
+
+Escolha uma opção:
+1. Adicionar tarefa
+2. Remover tarefa
+3. Marcar tarefa como concluída
+4. Listar tarefas
+5. Sair
+Opção: 5
+
+Saindo do programa.
+
+## Cenários testados:
+✅ Listar quando não há tarefas
+✅ Adicionar tarefas válidas
+✅ Listar tarefas existentes
+✅ Marcar tarefa como concluída
+✅ Remover tarefa existente
+✅ Tentativa de remover tarefa inexistente
+✅ Tentativa de marcar tarefa inexistente como concluída
+✅ Tentativa de adicionar tarefa com título duplicado
+✅ Opções inválidas do menu (números e texto)
+✅ Sair do programa
